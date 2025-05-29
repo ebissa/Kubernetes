@@ -5,6 +5,8 @@ metadata:
   labels:
     app: mywebapp
     tier: frontend
+  annotations:
+    submitted-by: ebissa-chemeda-ugr1032
 spec:
   replicas: 1
   selector:
@@ -16,7 +18,7 @@ spec:
       labels:
         app: mywebapp
         tier: frontend
-    spec: # Pod spec
+    spec:
       containers:
       - name: mycontainer
         image: devopsjourney1/mywebapp
